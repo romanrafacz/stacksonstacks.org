@@ -1,0 +1,8 @@
+org/stacksonstacks/controller/PostController.class
+org/stacksonstacks/domain/Post.class
+org/stacksonstacks/StacksApplication.class
+org/stacksonstacks/config/DataSourceConfig.class
+org/stacksonstacks/domain/Author.class
+org/stacksonstacks/domain/AuthorDetails.class
+org/stacksonstacks/domain/Category.class
+org/stacksonstacks/repository/PostRepository.class
