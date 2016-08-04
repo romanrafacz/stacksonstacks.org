@@ -1,0 +1,14 @@
+<html layout:decorator="index">
+	<div layout:fragment="content">
+		
+		<div data-th-each="post: ${posts}">
+				
+				<div class="col-md-8">
+				<h1><a th:href="@{'/post/{id}'(id=${post.id})}" data-th-text="${post.title}"></a></h1>
+				<p th:utext="${post.description}"></p>
+				</div>
+		</div>
+	
+	</div>
+
+</html>

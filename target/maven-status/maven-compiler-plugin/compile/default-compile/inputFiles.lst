@@ -1,5 +1,6 @@
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/AuthorDetails.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/Category.java
+/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/controller/AuthorController.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/Post.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/repository/PostRepository.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/controller/PostController.java
