@@ -1,10 +1,13 @@
 package org.stacksonstacks.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.stacksonstacks.domain.Post;
 import org.stacksonstacks.repository.PostRepository;
 
 @Controller
@@ -37,32 +40,50 @@ public class PostController {
 		model.addAttribute("post", postRepository.findOne(id));
 		return "post/post";
 	}
+	
+	//Controls navigation by categories
 
 	@RequestMapping("/java")
 	public String listPostsByJava(Model model){
-		model.addAttribute("posts", postRepository.findPostByCategory(java));
-		return "post/show_posts_by_category";
+		List<Post> getposts = postRepository.findPostByCategory(java);
+		model.addAttribute("posts", getposts);
+		if (getposts.isEmpty()){
+			return "post/show_posts_empty";
+		} else { return "post/show_posts_by_category"; }
 	}
 	
 	@RequestMapping("/python")
 	public String listPostsByPython(Model model){
-		model.addAttribute("posts", postRepository.findPostByCategory(python));
-		return "post/show_posts_by_category";
+		List<Post> getposts = postRepository.findPostByCategory(python);
+		model.addAttribute("posts", getposts);
+		if (getposts.isEmpty()){
+			return "post/show_posts_empty";
+		} else { return "post/show_posts_by_category"; }
 	}
 	
 	@RequestMapping("/postgres")
 	public String listPostsByPostgres(Model model){
-		model.addAttribute("posts", postRepository.findPostByCategory(postgres));
-		return "post/show_posts_by_category";
+		List<Post> getposts = postRepository.findPostByCategory(postgres);
+		model.addAttribute("posts", getposts);
+		if (getposts.isEmpty()){
+			return "post/show_posts_empty";
+		} else { return "post/show_posts_by_category"; }
 	}
 	@RequestMapping("/saltstack")
 	public String listPostsBySalt(Model model){
-		model.addAttribute("posts", postRepository.findPostByCategory(saltstack));
-		return "post/show_posts_by_category";
+		List<Post> getposts = postRepository.findPostByCategory(saltstack);
+		model.addAttribute("posts", getposts);
+		if (getposts.isEmpty()){
+			return "post/show_posts_empty";
+		} else { return "post/show_posts_by_category"; }
 	}
+	
 	@RequestMapping("/devops")
 	public String listPostsByDevops(Model model){
-		model.addAttribute("posts", postRepository.findPostByCategory(devops));
-		return "post/show_posts_by_category";
+		List<Post> getposts = postRepository.findPostByCategory(devops);
+		model.addAttribute("posts", getposts);
+		if (getposts.isEmpty()){
+			return "post/show_posts_empty";
+		} else { return "post/show_posts_by_category"; }
 	}
 }
