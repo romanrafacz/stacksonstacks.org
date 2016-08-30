@@ -26,7 +26,7 @@ public class PostController {
 	
 	@RequestMapping(value="/search", method=RequestMethod.POST)
 	public String searchForm(Model model, String search){
-		model.addAttribute("posts", search);
+		//model.addAttribute("posts", postRepository.);
 		return "post/show_posts_search_test";
 	}
 	

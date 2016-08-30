@@ -13,5 +13,8 @@ public interface PostRepository extends JpaRepository<Post, Integer> {
 	@Query("SELECT id, title, description from Post WHERE category_id = (:categoryId)")
 	List<Post> findPostByCategory(@Param("categoryId") Integer categoryId);
 	
+	//@Query("select id, title, description from Post WHERE title % (:search)")
+	//List<Post> findPostBySearch(@Param("search") String search);
+	
 
 }

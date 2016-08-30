@@ -1,0 +1,28 @@
+.project_images {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px; 
+    color: blue;
+}
+#images{
+   text-align:center;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+#profile-logo { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+}
+#profile-logo p { 
+  line-height: 1.8; 
+}
+#profile-logo .curve { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
