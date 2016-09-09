@@ -1,9 +1,13 @@
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/AuthorDetails.java
-/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/Category.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/controller/AuthorController.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/Post.java
-/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/repository/PostRepository.java
+/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/controller/AdminController.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/controller/PostController.java
-/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/Author.java
+/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/config/SecurityConfig.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/StacksApplication.java
+/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/config/ThymeleafConfig.java
+/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/Category.java
+/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/repository/PostRepository.java
+/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/controller/LoginController.java
+/Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/domain/Author.java
 /Users/Terri/Documents/workspace/stacks/src/main/java/org/stacksonstacks/config/DataSourceConfig.java
