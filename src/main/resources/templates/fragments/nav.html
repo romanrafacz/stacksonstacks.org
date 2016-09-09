@@ -22,6 +22,11 @@
 						</form>
 						</li> -->
 						<li class="active"><a th:href="@{'/author'}">About</a></li>
+						<div sec:authorize="isAuthenticated()">
+						<form th:action="@{/logout}" method="post">
+            			<input type="submit" value="Sign Out"/>
+        				</form>
+        				</div>
 					</ul>
 				</div>
 			</div>
