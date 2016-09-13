@@ -1,0 +1,56 @@
+<html layout:decorator="index">
+	<div layout:fragment="content">
+	
+		<p>Create a new customer</p>
+		<form method="post" name="user_form" id="user_form" th:action="@{'/post/add'}" role="form">
+				
+				<div>
+				<label>Title</label>
+				</div>
+				<div>
+				<input type="text"  th:value="${post.title}" name="title"/>
+				<p th:if="${#fields.hasErrors('post.title')}" th:errors="*{post.title}">Title Error</p>
+				</div>
+				
+				<div>
+				<label>Description</label>
+				</div>
+				<div>
+				<textarea cols="100" rows="15" type="text"  th:value="${post.description}" name="description"/>
+				<p th:if="${#fields.hasErrors('post.description')}" th:errors="*{post.description}">Description Error</p>
+				</div>
+				
+				<div>
+				<label>Content</label>
+				</div>
+				<div>
+				<textarea cols="100" rows="15"  type="text"  th:value="${post.content}" name="content"/>
+				<p th:if="${#fields.hasErrors('post.content')}" th:errors="*{post.content}">Content Error</p>
+				</div>
+				
+				<div>
+				<label>Author</label>
+				</div>
+				<div>
+				<input type="text"  th:value="${post.authorId}" name="authorId"/>
+				<p th:if="${#fields.hasErrors('post.authorId')}" th:errors="*{post.authorId}">Author Error</p>
+				</div>
+				
+				<div>
+				<label>Category</label>
+				</div>
+				<div>
+				<input type="text"  th:value="${post.category}" name="category"/>
+				<p th:if="${#fields.hasErrors('post.category')}" th:errors="*{post.category}">Category Error</p>
+				</div>
+
+				 
+                <td><button type="submit" value="Add" class="btn btn-primary">Add</button></td>
+                
+			
+
+			
+		</form>
+	</div>
+
+</html>
