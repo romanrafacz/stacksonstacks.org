@@ -1,0 +1,13 @@
+<html layout:decorator="index">
+	<div layout:fragment="content">
+		
+		<div data-th-each="author: ${authors}">
+				
+				<div class="col-md-8">
+				<p th:utext="${author.username}"></p>
+				</div>
+		</div>
+	
+	</div>
+
+</html>
