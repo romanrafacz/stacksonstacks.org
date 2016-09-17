@@ -18,7 +18,7 @@ public class Post {
 	
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	@Column(name="post_id")
 	private Integer id;
 	

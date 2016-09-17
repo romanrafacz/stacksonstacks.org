@@ -35,6 +35,11 @@ public class AdminController {
 		HashMap<String, Integer> auths = new HashMap<>();
 		auths.put("Rome", 1);
 		auths.put("Erik", 2);
+		
+//		for (Author x : authorRepository.findAll() ){
+//			auths.put(x.getUsername(), x.getAuthorId());
+//		}
+		
 		HashMap<String, Integer> categories = new HashMap<>();
 		categories.put("Java", 1);
 		categories.put("Python", 2);
