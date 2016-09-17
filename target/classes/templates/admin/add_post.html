@@ -32,15 +32,29 @@
 				<label>Author</label>
 				</div>
 				<div>
-				<input type="text"  th:value="${post.authorId}" name="authorId"/>
+<!-- 				<input type="text"  th:value="${post.authorId}" name="authorId"/> -->
 				<p th:if="${#fields.hasErrors('post.authorId')}" th:errors="*{post.authorId}">Author Error</p>
+				
+				<select th:field="*{post.authorId}">
+             	<option th:each="author : ${auths}"
+             				 name="authorId"
+                             th:value="${author.value}"
+                             th:text="${author.key}" />
+        	 	</select>
 				</div>
 				
 				<div>
 				<label>Category</label>
 				</div>
 				<div>
-				<input type="text"  th:value="${post.category}" name="category"/>
+<!-- 				<input type="text"  th:value="${post.category}" name="category"/> -->
+
+				<select th:field="*{post.category}">
+             	<option th:each="cat : ${categories}"
+             				 name="category"
+                             th:value="${cat.value}"
+                             th:text="${cat.key}" />
+        	 	</select>
 				<p th:if="${#fields.hasErrors('post.category')}" th:errors="*{post.category}">Category Error</p>
 				</div>
 

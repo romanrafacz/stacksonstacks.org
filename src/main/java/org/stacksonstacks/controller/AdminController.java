@@ -1,5 +1,7 @@
 package org.stacksonstacks.controller;
 
+import java.util.HashMap;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +32,18 @@ public class AdminController {
 	
 	@RequestMapping("/admin/post/new")
 	public String addNewPost(Post post, Model model){
+		HashMap<String, Integer> auths = new HashMap<>();
+		auths.put("Rome", 1);
+		auths.put("Erik", 2);
+		HashMap<String, Integer> categories = new HashMap<>();
+		categories.put("Java", 1);
+		categories.put("Python", 2);
+		categories.put("Postgres", 3);
+		categories.put("Saltstack", 4);
+		categories.put("Devops", 5);
+		categories.put("Linux", 6);
+		model.addAttribute("auths", auths);
+		model.addAttribute("categories", categories);
 		return "admin/add_post";
 	}
 	
