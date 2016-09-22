@@ -26,3 +26,6 @@
   -webkit-shape-outside:circle();
   shape-outside:circle();
 }
+img {
+	box-shadow: 10px 10px 5px #888888;
+}
