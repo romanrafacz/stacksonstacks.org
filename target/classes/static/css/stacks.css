@@ -18,6 +18,10 @@ h1 {
 	line-height: 26px;
 	}
 	
+@font-face {
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+	
 
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
