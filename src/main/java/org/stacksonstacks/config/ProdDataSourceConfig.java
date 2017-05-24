@@ -3,13 +3,14 @@ package org.stacksonstacks.config;
 import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Controller;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-@Controller
+@Configuration
 @Profile("prod")
 public class ProdDataSourceConfig {
 	
