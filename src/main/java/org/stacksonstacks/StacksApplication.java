@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaRepositories
 public class StacksApplication extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		SpringApplication.run(StacksApplication.class, args);
 	}
 	
