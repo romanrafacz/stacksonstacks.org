@@ -11,7 +11,6 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
-@Profile("prod")
 public class ProdDataSourceConfig {
 	
 	@Bean
