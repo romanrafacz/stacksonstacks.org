@@ -18,7 +18,7 @@ public class ProdDataSourceConfig {
 	public DataSource dataSource(){
 		HikariConfig hikariConfig = new HikariConfig();
 		//Turned this off, then started working
-		//hikariConfig.setDriverClassName("org.postgresql.Driver");
+		hikariConfig.setDriverClassName("org.postgresql.Driver");
 		hikariConfig.setJdbcUrl("jdbc:postgresql://localhost:5432/blog");
 		hikariConfig.setUsername("roman");
 		hikariConfig.setPassword("snickers");
