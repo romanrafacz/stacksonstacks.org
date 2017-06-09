@@ -1,7 +1,7 @@
 org\stacksonstacks\domain\Author.class
-org\stacksonstacks\StacksApplication.class
 org\stacksonstacks\repository\AuthorRepository.class
 org\stacksonstacks\controller\PostController.class
+org\stacksonstacks\config\StacksApplication.class
 org\stacksonstacks\controller\AuthorController.class
 org\stacksonstacks\config\ProdDataSourceConfig.class
 org\stacksonstacks\domain\Post.class

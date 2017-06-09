@@ -1,4 +1,4 @@
-package org.stacksonstacks.config;
+package org.stacksonstacks;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

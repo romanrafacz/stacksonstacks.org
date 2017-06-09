@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.stacksonstacks.StacksApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.255 sec <<< FAILURE! - in org.stacksonstacks.StacksApplicationTests
-contextLoads(org.stacksonstacks.StacksApplicationTests)  Time elapsed: 0.042 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.696 sec <<< FAILURE! - in org.stacksonstacks.StacksApplicationTests
+contextLoads(org.stacksonstacks.StacksApplicationTests)  Time elapsed: 0.045 sec  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
@@ -31,7 +31,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/stacksonstacks/config/ProdDataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to 192.168.100.128:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/stacksonstacks/config/ProdDataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
@@ -84,7 +84,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/stacksonstacks/config/ProdDataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to 192.168.100.128:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/stacksonstacks/config/ProdDataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
@@ -139,7 +139,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Could not au
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/stacksonstacks/config/ProdDataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to 192.168.100.128:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/stacksonstacks/config/ProdDataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
@@ -206,7 +206,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to 192.168.100.128:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
@@ -274,16 +274,16 @@ Caused by: org.springframework.beans.BeanInstantiationException: Failed to insta
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to 192.168.100.128:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Caused by: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:516)
 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:118)
 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:71)
 	at org.stacksonstacks.config.ProdDataSourceConfig.dataSource(ProdDataSourceConfig.java:35)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d.CGLIB$dataSource$0(<generated>)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d$$FastClassBySpringCGLIB$$a5da07d5.invoke(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd.CGLIB$dataSource$0(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd$$FastClassBySpringCGLIB$$b0ad0bd2.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d.dataSource(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd.dataSource(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -355,7 +355,7 @@ Caused by: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.postgresql.util.PSQLException: Connection to 192.168.100.128:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:252)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215)
@@ -368,11 +368,11 @@ Caused by: org.postgresql.util.PSQLException: Connection to 192.168.100.128:5432
 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:118)
 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:71)
 	at org.stacksonstacks.config.ProdDataSourceConfig.dataSource(ProdDataSourceConfig.java:35)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d.CGLIB$dataSource$0(<generated>)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d$$FastClassBySpringCGLIB$$a5da07d5.invoke(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd.CGLIB$dataSource$0(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd$$FastClassBySpringCGLIB$$b0ad0bd2.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d.dataSource(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd.dataSource(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -444,7 +444,7 @@ Caused by: org.postgresql.util.PSQLException: Connection to 192.168.100.128:5432
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.net.ConnectException: Connection timed out: connect
+Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -466,11 +466,11 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:118)
 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:71)
 	at org.stacksonstacks.config.ProdDataSourceConfig.dataSource(ProdDataSourceConfig.java:35)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d.CGLIB$dataSource$0(<generated>)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d$$FastClassBySpringCGLIB$$a5da07d5.invoke(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd.CGLIB$dataSource$0(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd$$FastClassBySpringCGLIB$$b0ad0bd2.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
-	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$f462601d.dataSource(<generated>)
+	at org.stacksonstacks.config.ProdDataSourceConfig$$EnhancerBySpringCGLIB$$78a4bbdd.dataSource(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
