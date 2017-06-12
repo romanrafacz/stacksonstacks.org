@@ -1,5 +1,6 @@
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\config\ProdDataSourceConfig.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\controller\AdminController.java
+C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\config\DevDataSourceConfig.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\config\SecurityConfig.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\controller\PostController.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\domain\Author.java
@@ -9,7 +10,7 @@ C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\domain\
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\repository\PostRepository.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\config\ThymeleafConfig.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\controller\LoginController.java
-C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\config\StacksApplication.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\controller\AuthorController.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\repository\CategoryRepository.java
 C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\domain\Post.java
+C:\Users\rrafacz\git\stacksonstacks.org\src\main\java\org\stacksonstacks\StacksApplication.java
